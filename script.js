@@ -8,18 +8,18 @@ btn.addEventListener("click",function(){
 })
 
 function createSheet(pixels){
-      let divSet=document.querySelectorAll('.container');
-      divSet.forEach(function(div){
-         for(let i=0;i<pixels;i++){
-            let element=document.createElement("div");
-            element.setAttribute("class","box");
-            div.appendChild((element));
+   let container=document.querySelector(".container");
+      for(let i=0;i<pixels;i++){
+         let row=document.createElement("div");
+         row.setAttribute("class",`row`);
+         container.appendChild(row);
+         for(let j=0;j<pixels;j++){
+            let box=document.createElement("div");
+            box.setAttribute("class","box");
+            row.appendChild(box);
+            box.addEventListener("mouseover",function(){
+               box.classList.add(".hovered");
+            })
          }
-      })
-      let boxes=document.querySelectorAll('.box');
-      boxes.forEach(function(box){
-         box.addEventListener("mouseover",function(){
-            box.classList.add("hovered");
-         });
-      })
+      }
 }

@@ -1,14 +1,21 @@
 
 .container{
    display: flex;
-   height: 6vh;  
+   flex-direction: column;
+   height: 100vh; 
+   flex-wrap: wrap; 
 }
 
-.container div{
-   width:6%;
-   background-color: cyan;
+.container .row{
+   flex-grow: 1;
+   display: flex;
 }
 
-.container div.hovered{
+.box{
+   flex-grow: 1;
+   background-color: aqua;
+}
+
+.box.hovered{
    background-color: blue;
 }
