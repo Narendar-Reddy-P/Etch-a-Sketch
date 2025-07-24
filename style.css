@@ -1,0 +1,14 @@
+
+.container{
+   display: flex;
+   height: 6vh;  
+}
+
+.container div{
+   width:6%;
+   background-color: cyan;
+}
+
+.container div.hovered{
+   background-color: blue;
+}
