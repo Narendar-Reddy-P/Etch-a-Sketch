@@ -11,6 +11,7 @@ form{
    display: flex;
    height: 35px;
    margin:20px;
+   margin-bottom: 10px;
    gap:10px;
 }
 input{
@@ -24,6 +25,7 @@ button{
    flex-grow: 1;
    flex-direction: column; 
    flex-wrap: wrap; 
+   margin:20px;
 }
 
 .container .row{
