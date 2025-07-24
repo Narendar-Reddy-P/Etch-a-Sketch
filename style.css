@@ -1,8 +1,28 @@
+html, body{
+   height: 100%;
+}
 
-.container{
+body{
    display: flex;
    flex-direction: column;
-   height: 100vh; 
+}
+
+form{
+   display: flex;
+   height: 35px;
+   margin:20px;
+   gap:10px;
+}
+input{
+   flex-grow: 2;
+}
+button{
+   flex-grow: 1;
+}
+.container{
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column; 
    flex-wrap: wrap; 
 }
 
